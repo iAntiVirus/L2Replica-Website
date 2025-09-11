@@ -70,10 +70,10 @@ Want to check more...
 </a>
 </div>
 </section>
-<br><br><br><br>
-<ul class="wow fadeInLeft">
+<br><br><br><br><header style="display: flex; align-items: center;  height: 100vh; background: transparent;pointer-events: none;">
+<ul style="pointer-events: auto; opacity: 0; transition: opacity 5s;" class="wow fadeInLeft" data-wow-delay="4s">
 		<div id="votes">
-			<strong>Vote for server</strong><br><br>
+			<br><br>
 			<div class="vote-item"><a href="https://hopzone.eu/vote/163" target="_blank"><img src="img/vote-hopzone1.gif"/></a></div>
 			<div class="vote-item"><a href="https://top.l2jbrasil.com/index.php?a=in&u=l2replica" target="_blank"><img src="img/vote-l2jbrasil.png"/></a></div>
 			<div class="vote-item"><a href="https://l2network.eu/index.php?a=in&u=AntiVirus" target="_blank"><img src="img/vote-l2network.png"/></a></div>
@@ -84,7 +84,7 @@ Want to check more...
 			<div class="vote-item"><a href="https://la2.mmotop.ru/servers/38838/votes/new" target="_blank"><img src="https://mmotop.ru/uploads/rating_img/mmo_38838.png" border="0" id="mmotopratingimg" alt="Rating of mmotop servers"></a></div>
 
 </ul>
-
+</header>
 <div class="anchor" id="whoweare"></div>
 <section class="whoweare">
 <div class="wrapper">
@@ -181,6 +181,11 @@ L2Replica is public test server. These servers are an emulator of the Lineage 2 
 </div>
 
 </footer>
-
+<script>
+  // Μετά από 1 δευτερόλεπτο γίνεται εμφανές
+  setTimeout(() => {
+    document.getElementById('votes').style.opacity = 0.8;
+  }, 1000);
+</script>
 </body>
 </html>
